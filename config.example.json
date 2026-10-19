@@ -1,0 +1,73 @@
+{
+  "output_dir": "datasets",
+  "presets": [
+    {
+      "name": "01_low_exp_low_gain",
+      "exposure_us": 1000.0,
+      "gain_db": 0.0
+    },
+    {
+      "name": "02_high_exp_low_gain",
+      "exposure_us": 4000.0,
+      "gain_db": 0.0
+    },
+    {
+      "name": "03_low_exp_high_gain",
+      "exposure_us": 1000.0,
+      "gain_db": 12.0
+    },
+    {
+      "name": "04_high_exp_high_gain",
+      "exposure_us": 4000.0,
+      "gain_db": 12.0
+    }
+  ],
+  "repeats": 1,
+  "expected_cameras": 3,
+  "sync_mode": "ptp",
+  "master_serial": "",
+  "output_line": "Line2",
+  "input_line": "Line0",
+  "trigger_edge": "RisingEdge",
+  "settle_ms": 100,
+  "warmup_frames": 1,
+  "timeout_ms": 3000,
+  "preview_red": 1.0,
+  "preview_blue": 1.0,
+  "preview_brightness_ev": 0.0,
+  "preview_fps": 4.0,
+  "auto_reference": true,
+  "reference_serial": "",
+  "meter_seconds": 4.0,
+  "low_exposure_factor": 1.0,
+  "high_exposure_factor": 4.0,
+  "low_gain_offset_db": 0.0,
+  "high_gain_offset_db": 12.0,
+  "ptp_wait_seconds": 45.0,
+  "ptp_max_offset_us": 10.0,
+  "ptp_max_timestamp_spread_us": 100.0,
+  "action_lead_ms": 200,
+  "network_interface": "",
+  "network_probe_seconds": 4.0,
+  "network_rediscover_seconds": 12.0,
+  "capture_strategy": "bracket",
+  "cross_bracket": false,
+  "range_policy": "strict",
+  "meter_target_percent": 20.0,
+  "meter_max_exposure_us": 100000.0,
+  "meter_max_gain_db": 24.0,
+  "camera_profiles": {},
+  "dslr_enabled": false,
+  "dslr_port": "",
+  "dslr_follow": false,
+  "dslr_reference_serial": "",
+  "dslr_exposure_us": 20000.0,
+  "dslr_iso": 100,
+  "dslr_aperture": "",
+  "dslr_white_balance": "",
+  "dslr_max_quantization_ev": 0.2,
+  "dslr_dispatch_offset_ms": 0,
+  "dslr_timeout_seconds": 90.0,
+  "auto_retry_count": 2,
+  "retry_delay_ms": 400
+}

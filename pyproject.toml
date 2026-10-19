@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raw-rig"
+version = "0.1.0"
+description = "Three-camera Bayer RAW bracket capture with live preview and verified storage"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "PySide6>=6.5", "opencv-python>=4.8", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+nikon = ["rawpy>=0.24", "exifread>=3"]
+
+[project.scripts]
+raw-rig = "rawrig.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["rawrig*"]
+
+[tool.setuptools.package-data]
+rawrig = ["assets/*.svg", "assets/*.png"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
