@@ -24,6 +24,7 @@ from rawrig.spinnaker import SpinnakerBackend
 def test_integrated_reference_phase_transfers_to_short_exposure(position, sign):
     f = 120.013
     ref = 1351.0
+    target = 35.0
     angle = 0.7 + sign * 2 * np.pi * f * ref / 2e6
     amplitude = ref * np.sinc(f * ref / 1e6)
     model = {
